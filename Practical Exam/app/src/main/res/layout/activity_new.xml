@@ -1,0 +1,70 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextEmpID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Employee ID"
+            android:padding="8dp"
+            android:paddingBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmpID"
+            android:hint="Employee Name"
+            android:padding="8dp"
+            android:paddingBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmpName"
+            android:hint="Employee Email"
+            android:padding="8dp"
+            android:paddingBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmpAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmpEmail"
+            android:hint="Employee Address"
+            android:padding="8dp"
+            android:paddingBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmpNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmpAddress"
+            android:hint="Employee Notes"
+            android:padding="8dp"
+            android:paddingBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Contact"
+            android:layout_below="@id/editTextEmpNotes"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:minWidth="200dp"
+            android:padding="16dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+    </RelativeLayout>
+
+</ScrollView>
